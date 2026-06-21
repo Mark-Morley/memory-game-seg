@@ -25,7 +25,7 @@ function useInterval() {
 export default function App() {
   const [screen, setScreen] = useState("setup");
   const [level, setLevel] = useState("beginner");
-  const [speed, setSpeed] = useState("steady");
+  const [speed, setSpeed] = useState("easy");
 
   const [sequence, setSequence] = useState([]);
   const [isReverseRound, setIsReverseRound] = useState(false);
