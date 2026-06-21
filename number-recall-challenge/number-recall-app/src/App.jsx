@@ -13,7 +13,7 @@ const LEVELS = {
   advanced: { label: "Advanced", startLen: 5, distractorChance: 0.35, reverseChance: 0.4, desc: "Distractors + reverse recall rounds" },
 };
 
-const SPEEDS = { relaxed: 750, steady: 550, brisk: 380 };
+const SPEEDS = { Easy: 750, Medium: 550, Hard: 380 };
 
 function useInterval() {
   const ref = useRef(null);
@@ -242,7 +242,6 @@ function SetupScreen({ level, setLevel, speed, setSpeed, onStart }) {
           ))}
         </div>
 
-        <div style={styles.fieldLabel}>Pad set (shape + color, both encode identity)</div>
         <div style={{ display: "flex", gap: 10, marginBottom: 8 }}>
           {PADS.map((p) => (
             <div key={p.id} style={{
